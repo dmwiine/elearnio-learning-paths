@@ -1,4 +1,8 @@
 class TalentCourse < ApplicationRecord
+
+  validates :course, presence: true
+  validates :talent, presence: true
+
   belongs_to :course
   belongs_to :talent
 
