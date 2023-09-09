@@ -1,7 +1,7 @@
 FactoryBot.define do
-  factory :talent_learning_path do
+  factory :talent_course do
+    course { course }
     talent { talent }
-    learning_path { learning_path }
     completed { false }
   end
 end

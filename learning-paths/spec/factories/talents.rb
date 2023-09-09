@@ -2,6 +2,6 @@ FactoryBot.define do
   factory :talent do
     username { "MyString" }
     email { "MyString" }
-    author { nil }
+    # author { nil }
   end
 end

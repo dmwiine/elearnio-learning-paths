@@ -7,6 +7,6 @@ RSpec.describe Author, type: :model do
   
 
   describe 'associations' do
-    it { is_expected.to have_many(:courses).through(:talents) }
+    it { is_expected.to have_many(:courses) }
   end
 end

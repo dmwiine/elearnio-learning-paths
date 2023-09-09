@@ -7,7 +7,7 @@ RSpec.describe Course, type: :model do
 
   describe 'associations' do
     it { is_expected.to have_many(:talent_courses) }
-    it { is_expected.to have_many(:talents).through(:courses) }
+    it { is_expected.to have_many(:talents).through(:talent_courses) }
     it { should belong_to(:author) }
     it { should belong_to(:learning_path) }
   end

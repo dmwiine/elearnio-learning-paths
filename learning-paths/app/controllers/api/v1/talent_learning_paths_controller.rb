@@ -1,10 +1,13 @@
 class Api::V1::TalentLearningPathsController < ApplicationController
     before_action :set_talent_learning_path, only: %i[update]
+
+    # Enroll onto learning path
     def create
       @talent_learning_path = TalentLearningPath.create(talent_learning_path_params)
       render json: @talent_learning_path, status: :created
     end
   
+    # Complete learning path
     def update
       @talent_learning_path.update(talent_learning_path_params)
       render json: @talent_learning_path, status: :ok

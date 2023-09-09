@@ -20,7 +20,7 @@ class Api::V1::AuthorsController < ApplicationController
   end
 
   def destroy
-      @author.update_courses(params[:author_id])
+      @author.update_courses(params[:author][:author_id])
       @author.destroy
       render json: { message: 'Author successfully deleted' }
   end
@@ -28,7 +28,7 @@ class Api::V1::AuthorsController < ApplicationController
   private
 
   def author_params
-    params.require(:author).permit(:firstname, :lastname, :bio)
+    params.require(:author).permit(:firstname, :lastname, :bio, :author_id)
   end
 
   def set_author

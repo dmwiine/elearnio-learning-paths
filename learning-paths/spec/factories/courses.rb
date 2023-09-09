@@ -1,8 +1,9 @@
 FactoryBot.define do
   factory :course do
-    name { "MyString" }
+    name { "Programming 101" }
     description { "MyString" }
-    author { nil }
-    learning_path { nil }
+    author { author }
+    learning_path { learning_path }
+    order { 1 }
   end
 end
