@@ -1,12 +1,4 @@
-# = ApiException
-# This module centralizes handling of pre-defined exceptions
-# For use, include ApiException::Handler on your controller
-# For delegate all of application error, Simply include the handler on your ApplicationController
-#
 module ApiException
-    # = EXCEPTIONS
-    # You can define your own exception on here.
-    #
     EXCEPTIONS = {
       #400
       "ActiveRecord::RecordInvalid" => { status: 400, error_code: 40001, message: "Invalid request" },
