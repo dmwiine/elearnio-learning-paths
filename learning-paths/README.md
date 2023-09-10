@@ -1,24 +1,23 @@
 # README
+## Ruby and Rails version
+This application uses Ruby version 3.0.0 and Rails 6.0 
+## Configuration
+Update the database.yml file with your Posgres credentials.
+I will be working on moving the postgress credentials to a .env file
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Database creation
+run `rake db:create`
 
-Things you may want to cover:
+## Database initialization
+run `rake db:migrate`
 
-* Ruby version
+## App initialisation
+run `bundle install`
 
-* System dependencies
+## Start the app
+run `rails s`
 
-* Configuration
+## How to run the test suite
+run `rspec spec`
+This will run all the tests in the spec.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
